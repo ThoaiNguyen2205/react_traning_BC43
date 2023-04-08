@@ -1,9 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
+# các file không cần đẩy lên git
 # dependencies
 /node_modules
-/.pnp
-.pnp.js
+
+
 
 # testing
 /coverage
