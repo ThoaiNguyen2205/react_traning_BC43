@@ -68,3 +68,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Buổi 3:Props
+
+<ul>
+    <li>
+    Props là thuộc tính có sẵn của react class component (do kế thừa từ class Component) dùng để nhận giá tị từ component cha truyền vào (Component cha là nơi sử dụng thẻ).Props không thể gán lại giá trị mới.
+    <br/>
+    Không thể dùng this.props.propName='giá trị mới' => sai cú pháp
+    </li>
+    <li>
+    Props khác state?
+        <p>
+        +Props và State đều là thuộc tính có sẵn của react class component để bindling dữ liệu lên giao diện.Tuy nhiên: <br/>
+            - State: dùng để lưu các giá trị thay đổi trên chính commponent đó. State có thể được gán lại thông qua phương thức setState <br/>
+            -Props: dùng để chứa các giá trị từ component cha truyền vào. Props không thể gán giá trị lại
+        </p>
+    </li>
+</ul>
