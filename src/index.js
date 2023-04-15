@@ -15,21 +15,54 @@ import "./assets/scss/index.scss";
 import DemoProps from "./Props/DemoProps";
 import ProductList from "./Props/ProductList/ProductList";
 import ProductDetail from "./Props/ProductDetail/ProductDetail";
-
+// Cấu hình react router dom
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomeTemplate from "./Templates/HomeTemplate";
 // Nội dung toàn bộ của website sẽ được chứa trong hàm render
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <div>
-    {/* <Home /> */}
-    {/* <Databinding /> */}
-    {/* <HandleEvent /> */}
-    {/* <DemoLogin /> */}
-    {/* <DemoState /> */}
-    {/* <StyleDemo /> */}
-    {/* <RenderWithMap /> */}
-    {/* <DemoPageLogin /> */}
-    {/* <DemoProps /> */}
-    {/* <ProductList /> */}
-    <ProductDetail />
+    <BrowserRouter>
+      <Routes>
+        <Route path="" element={<HomeTemplate />}>
+          <Route index element={<Home />}></Route>
+          <Route path="cart" element={<ProductDetail />}></Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </div>
 );
+
+{
+  /* <Home /> */
+}
+{
+  /* <Databinding /> */
+}
+{
+  /* <HandleEvent /> */
+}
+{
+  /* <DemoLogin /> */
+}
+{
+  /* <DemoState /> */
+}
+{
+  /* <StyleDemo /> */
+}
+{
+  /* <RenderWithMap /> */
+}
+{
+  /* <DemoPageLogin /> */
+}
+{
+  /* <DemoProps /> */
+}
+{
+  /* <ProductList /> */
+}
+{
+  /* <ProductDetail /> */
+}
