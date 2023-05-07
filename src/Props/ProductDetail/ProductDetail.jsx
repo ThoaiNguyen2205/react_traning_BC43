@@ -85,6 +85,7 @@ export default class ProductDetail extends Component {
     });
   };
   xoaSanPham = (maSP) => {
+    console.log(maSP);
     // dựa vào mã tìm ra index của sản phẩm cần xoá trong arGioHang
     let index = this.state.arrGioHang.findIndex((item) => item.maSP === maSP);
     if (index != -1) {

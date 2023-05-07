@@ -12,7 +12,7 @@ export default class HandleEvent extends Component {
     return (
       <div className="container">
         <h3>Handle event</h3>
-        {/* cách định nghĩa functiopn cho 1 sự kiện của 1 nút xử lý */}
+        {/* cách định nghĩa function cho 1 sự kiện của 1 nút xử lý */}
         <button
           className="btn btn-success"
           onClick={(event) => {

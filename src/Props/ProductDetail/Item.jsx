@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
 export default class Item extends Component {
-  xemChiTiet = (spClick) => {
-    this.setState({
-      spChiTiet: spClick,
-    });
-  };
+  // xemChiTiet = (spClick) => {
+  //   this.setState({
+  //     spChiTiet: spClick,
+  //   });
+  // };
   render() {
     // lấy từ propsName của component cha truyền vào
     let { phone, xemChiTiet, themGioHang } = this.props;
